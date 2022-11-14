@@ -1,0 +1,21 @@
+body {
+  background-color:burlywood;
+}
+
+.top {
+    background-color: lightblue;
+    text-align: left;
+    color: coral;
+}
+
+.introduce {
+    border-style: solid;
+    border-width: 2px;
+    border-color: cornflowerblue;
+    border-radius: 3px;
+}
+.color{
+    border-style: solid;
+    border-width: 2px;
+    border-color: cornflowerblue;
+}
