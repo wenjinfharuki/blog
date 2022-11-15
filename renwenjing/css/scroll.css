@@ -1,0 +1,25 @@
+.scroll {
+    width: 80%;
+    margin: 10px;
+    padding: 100px 50px;
+    text-align: left;
+    border: 1px solid rgb(241, 176, 90);
+    overflow: hidden;
+}
+
+.scroll img {
+    display: inline-block;
+    animation: scrollAnime 6s linear infinite alternate;
+}
+
+@keyframes scrollAnime {
+    0% {
+        margin-left: 100%;
+        transform: translateX(-100%)
+    }
+
+    100% {
+        margin-left: 0;
+        transform: translateX(0)
+    }
+}
