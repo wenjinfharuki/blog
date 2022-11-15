@@ -116,15 +116,21 @@ body {
     margin-left: 3px;
 }
 
-footer{
+footer {
     width: 100%;
     padding: 10px 10px;
     background-color: lightblue;
     box-sizing: border-box;
 }
+
 .logout {
     border-style: solid;
     border-color: burlywood;
     text-align: center;
     width: 200px;
+}
+
+.blogLink {
+    text-decoration: none;
+    color:black;
 }
