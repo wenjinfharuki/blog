@@ -1,0 +1,42 @@
+body{
+    background-image: url("/images/loginImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:inherit;
+}
+
+.div1 {
+    background-color: lightblue;
+    border-style: solid;
+    border-width: 2px;
+    width: 70%;
+    margin: auto;
+    height:fit-content;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+}
+
+/* form {
+    border-style: solid;
+    width:50%;
+    margin: auto;
+    padding: 20px;
+    background-color: lightblue
+} */
+
+h2 {
+    text-align: center;
+}
+
+
+.wordColor {
+    color: coral;
+}
+
+.buttonColor {
+    background-color: cadetblue;
+}

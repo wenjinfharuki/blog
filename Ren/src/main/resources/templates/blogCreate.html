@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="/css/blogCreate.css">
+
+</head>
+
+<body>
+	<div class="main-inner">
+		<section class="register-section">
+			<h2>ブログ登録画面</h2>
+			<form method="POST" action="/blogregister">
+				<div>
+					<div>
+						<div>タイトル</div>
+						<input type="text" name="blogTitle">
+					</div>
+					<div>投稿内容</div>
+					<textarea name="message"></textarea>
+				</div>
+				<div>
+					<input type="submit" value="登録"></input>
+					<button class="back-btn" onclick="history.back();" type="button">戻る</button>
+				</div>
+	</div>
+	</form>
+	</section>
+	</div>
+</body>
+
+</html>

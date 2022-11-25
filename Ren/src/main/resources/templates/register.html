@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="/css/registerStyle.css">
+</head>
+
+<body>
+	<!--  <Script Language="JavaScript">
+		alert("Username is exist!");
+	</Script>-->
+	<div class="div1">
+		<form th:action="@{/register}" method="post">
+			<h1 class="color">Register</h1>
+			<h2 th:if="${error}">Username is exist!</h2>
+			<p>Please fill in the form to create an account.</p>
+			<hr>
+			<div>
+				<label for="username" class="color">Username</label><br> <input
+					id="username" type="text" name="username" placeholder="username"
+					required class="input1">
+			</div>
+			<div>
+				<label for="password" class="color">Password</label><br> <input
+					id="password" type="password" name="password"
+					placeholder="password" required class="input1">
+			</div>
+			<div>
+				<p class="color">
+					<input type="checkbox">By create an account you agree to
+					our Terms & Privacy.
+				</p>
+			</div>
+			<div>
+				<input type="submit" value="Register" class="input1" id="color1">
+				<!-- <span th:if="${error}" ><button id="color1">Resigter</button></span> -->
+			</div>
+			<div>
+				<p>
+					Already have an account?<a href="/login" target="_blank">Sign
+						in.</a>
+				</p>
+			</div>
+		</form>
+	</div>
+
+</body>
+
+</html>

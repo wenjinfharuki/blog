@@ -1,0 +1,141 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    background: burlywood;
+    box-sizing: border-box;
+}
+
+header .inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.logo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    font-weight: bold;
+}
+
+
+
+header .navi {
+    margin: 0 0 0 auto;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+}
+
+header .navi li {
+    margin: 5px 0 5px 40px;
+}
+
+header .navi li:first-child {
+    margin-left: 0;
+}
+
+header .navi li a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333;
+}
+
+header .navi li a:hover {
+    text-decoration: underline;
+}
+
+#blog_1 {
+    padding-right: 8px;
+}
+
+body {
+
+    background-color: burlywood;
+}
+
+.inner {
+    background-color: lightblue;
+    text-align: left;
+    color: coral;
+}
+
+.introduce {
+    border-style: solid;
+    border-width: 50%;
+    border-color: cornflowerblue;
+    border-radius: 3px;
+}
+
+
+
+.color {
+    border-style: solid;
+    border-width: 2px;
+    border-color: cornflowerblue;
+}
+
+.material-symbols-outlined {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.div1 {
+    padding-left: 60%;
+}
+
+#div1 {
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+
+
+#profile_1 {
+    height: 50%;
+    width: 200px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: cornflowerblue;
+    border-radius: 4px;
+    margin-top: 50%;
+    margin-left: 3px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: lightblue;
+    box-sizing: border-box;
+}
+
+.logout {
+    border-style: solid;
+    border-color: burlywood;
+    text-align: center;
+    width: 200px;
+}
+
+.blogLink {
+    text-decoration: none;
+    color:black;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}

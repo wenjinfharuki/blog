@@ -1,0 +1,23 @@
+body {
+	background-color: burlywood;
+}
+
+.main-inner {
+	background-color: lightblue;
+	border-style: solid;
+	border-width: 2px;
+	width: 50%;
+	margin: auto;
+}
+
+.register-section {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.newAccount {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}

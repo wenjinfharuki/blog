@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage</title>
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="/css/blog.css">
+<link rel="stylesheet" href="/css/hpStyle.css">
+<link rel="stylesheet" href="/css/scroll.css">
+
+</head>
+
+<body>
+	<header id="header">
+		<div class="inner">
+			<h2>
+				<span class="material-symbols-outlined"> favorite </span>こんにちは～
+				<sapn th:text="${username}"></sapn>
+				<br>
+			</h2>
+			<ul class="navi">
+				<li><span class="material-symbols-outlined"> home </span><a
+					href="#home">ホーム</a></li>
+				<li id="blog_1"><span class="material-symbols-outlined">
+						toys_fan </span><a href="#blog">ブログ</a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<div class="scroll">
+			<img src="/images/saboten3.jpg" alt="saboten" id="saboten">
+		</div>
+		<div class="story" id="blog">
+
+			<br> <br> <br> <br>
+			<h4>
+				<span style="color: coral">ブログ</span>
+			</h4>
+			<hr>
+			<div class="main-inner">
+				<section>
+					<div>
+						<a href="/blogcreate" class="blogcreate">ブログ登録</a>
+					</div>
+					<div>
+						<div th:each="blog:${blogList}">
+							<a th:href="'/blogdetail/'+${blog.blogId}"><h3
+									th:text="${blog.blogTitle}"></h3>
+								<div>
+									<p th:text="${blog.message}"></p>
+								</div> </a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+	</main>
+</body>
+<footer>
+	<form th:action="@{/login}" method="post">
+		<button class="logout" id="home" name="logout">ログアウト</button>
+	</form>
+</footer>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlogEdit</title>
+<link rel="stylesheet" href="/css/blogCreate.css">
+</head>
+
+<body>
+	<div class="main-inner">
+		<section class="register-section">
+			<h2>ブログ編集画面</h2>
+			<form method="POST" th:action="@{/blogupdate}">
+				<div>
+					<div>
+						<div>タイトル</div>
+						<input type="text" name="blogTitle" th:value="${blogs.blogTitle}">
+					</div>
+					<div>
+						<div>投稿内容</div>
+						<textarea name="message" th:text="${blogs.message}"></textarea>
+					</div>
+					<input type="hidden" name="blogId" th:value="${blogs.blogId}">
+					<div>
+						<button>更新</button>
+						<button onclick="history.back();" type="button">戻る</button>
+					</div>
+				</div>
+			</form>
+			<div>
+				<form method="post" th:action="@{/delete}">
+					<input type="hidden" name="blogId" th:value="${blogs.blogId}">
+					<button>削除</button>
+				</form>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

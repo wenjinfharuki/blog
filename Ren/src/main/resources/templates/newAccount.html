@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NewAccount</title>
+<link rel="stylesheet" href="/css/blogCreate.css">
+</head>
+
+<body>
+	<div class="main-inner">
+		<form th:action="@{/newAccount}" method="get" class="newAccount">
+			<h3>
+				<span th:text="${username}+'さん'"></span>,新規登録完了。<br> <a
+					href="/login.html">ログイン</a>してください。
+			</h3>
+		</form>
+	</div>
+</body>
+
+</html>
