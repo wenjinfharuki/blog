@@ -1,1 +1,1 @@
-package renwenjing.example.controller;
+package ren.example.controller;
